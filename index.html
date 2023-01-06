@@ -1,0 +1,15 @@
+<script type="module">
+import * as eg from "https://js.sabae.cc/egvr.js"
+
+for(let x=-10;x<10;x++)
+for(let z=0;z<10;z++)
+{
+  eg.box(x,-1,-z,1,eg.rgb(randomInt(0,256),randomInt(0,256),randomInt(0,256)))
+}
+for(let i=0;i<10;i++){
+  eg.sphere(randomInt(-10,10),randomInt(-10,10),randomInt(0,10))
+}
+function randomInt(min,max){
+  return Math.floor((max-min)*Math.random()+min)
+}
+</script>
